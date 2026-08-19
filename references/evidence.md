@@ -19,3 +19,5 @@ This Skill retains the portable instructional ideas and deliberately leaves out 
 These sources support ingredients, not a universal script. The one-question rhythm, five-level hint ladder, two-prompt escalation threshold, and material playbooks are practical design choices intended to keep dialogue usable and prevent unproductive withholding. They should be revised if real use reveals a better policy.
 
 The optional long-form mode operationalizes the same evidence across sessions through a dependency map, qualitative evidence states, adaptive retrieval scheduling, cumulative transfer checks, and compact learner-owned records. Its file schema and scheduling intervals are practical defaults rather than research-validated measurements of mastery.
+
+The mastery rubric, state concurrency policy, data lifecycle, and source-instruction boundary are reliability and safety design choices. The behavioral cases in `evals/cases.json` make those choices testable across agent hosts, but passing the deterministic repository validator does not demonstrate that a particular model follows them; host-level forward evaluation is still required.

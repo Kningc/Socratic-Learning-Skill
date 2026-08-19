@@ -1,3 +1,13 @@
+---
+schema_version: "1"
+skill_version: "1.4.0"
+record_type: learner-state
+course_id: ""
+revision: 0
+created_at: ""
+updated_at: ""
+---
+
 # Learner state
 
 ## Current position
@@ -16,9 +26,9 @@
 
 ## Mastery evidence
 
-| Concept ID | State | Evidence observed | Source or task | Last demonstrated |
-| --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| Concept ID | State | Evidence type | Support level | Evidence observed | Source or task | Last demonstrated |
+| --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |  |
 
 ## Active misconceptions and prerequisite gaps
 

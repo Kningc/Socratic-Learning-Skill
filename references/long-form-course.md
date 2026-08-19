@@ -8,6 +8,8 @@ Before asking questions, inspect the request, available material, conversation, 
 
 If compatible state exists and the learner asks to continue, resume from it without repeating onboarding. If several courses or incompatible states could apply, ask which one to use before changing anything.
 
+Before creating or changing state, read [state-management.md](state-management.md). Before recording mastery or deciding completion, read [mastery-rubrics.md](mastery-rubrics.md).
+
 For a new course, resolve missing information in this priority order, but ask only what matters now:
 
 1. **Scope and continuity:** focused session or sustained course. Ask only when the request is ambiguous.
@@ -62,7 +64,7 @@ Use qualitative states tied to observable evidence:
 - `remediate`: a misconception or prerequisite gap is active;
 - `skipped`: intentionally excluded from the declared goal, with the reason recorded.
 
-Do not convert confidence or conversational fluency into mastery. Record a brief evidence note and source anchor for every `demonstrated` judgment. A failed delayed retrieval can move an item back to `remediate` without erasing its history.
+Do not convert confidence or conversational fluency into mastery. Apply the support levels and evidence requirements in `mastery-rubrics.md`. Record a brief evidence note and source anchor for every `demonstrated` judgment. A failed delayed retrieval can move an item back to `remediate` without erasing its history.
 
 Maintain three separate concerns:
 
@@ -74,7 +76,7 @@ Maintain three separate concerns:
 
 At the start of a later session, read the course map, current learner state, due review items, and only the relevant recent log entries. Then state the current location, one or two due callbacks, and the proposed target. Do not reload the entire book or complete conversation archive.
 
-Treat the state files as the canonical cross-session memory. If conversation memory conflicts with written state, inspect the evidence and reconcile it explicitly rather than silently choosing one.
+Treat the state files as the canonical cross-session memory. If conversation memory conflicts with written state, inspect the evidence and reconcile it explicitly rather than silently choosing one. Use the revision checks in `state-management.md` before every write.
 
 ## Run a course session
 

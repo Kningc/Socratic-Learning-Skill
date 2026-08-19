@@ -14,6 +14,9 @@ The core skill is agent-agnostic and written in the portable `SKILL.md` format. 
 - 可选的整本书/长期课程模式，包含课程地图、复习队列、实验记录和累计评估
 - 单次学习默认不持久化；长期状态仅在用户要求或同意后创建
 - 首次启动先推断上下文，只逐个询问真正影响路线或写入权限的信息
+- 版本化课程状态，支持并发冲突检测、迁移、暂停、导出、重置和删除
+- 将教材与网页中的指令性文字视为学习材料，防止提示注入越权
+- 用证据类型和提示支持程度校准掌握判断
 - 核心协议不包含任何平台专用工具名称或调用语法
 
 ## 支持的 Agent
@@ -59,14 +62,29 @@ Use the socratic-learning skill to help me learn the attached chapter. I want to
 
 如果 Agent 尚未原生支持 Skills，请把本仓库作为上下文提供，并要求它先读取 `SKILL.md`。无需转换核心提示词。
 
+## 验证
+
+运行跨平台结构验证：
+
+```bash
+python3 scripts/validate_skill.py
+```
+
+验证器检查 Skill/状态版本一致性、状态 Schema、相对链接以及行为案例格式。`evals/cases.json` 定义了可用于各 Agent 实际前向评测的输入、环境、必须行为、禁止行为和预期写入；验证器本身不会假装判断模型输出是否合格。
+
 ## 文件
 
 - `SKILL.md`：跨 Agent 的核心教学协议
 - `references/material-playbooks.md`：不同资料类型的适配策略
 - `references/long-form-course.md`：整本书和长期课程的编排、复习、实验及评估协议
+- `references/state-management.md`：状态 Schema、迁移、并发写入和数据生命周期
+- `references/mastery-rubrics.md`：掌握证据、支持程度和完成判定标准
+- `references/safety-and-source-boundaries.md`：材料提示注入、命令和隐私边界
 - `references/evidence.md`：设计依据与来源说明
 - `references/compatibility.md`：各主流 Agent 的安装与调用方式
 - `assets/course-state/`：获准启用长期跟踪时复制使用的状态模板
+- `evals/`：跨 Agent 行为验收案例、运行方法和结果模板
+- `scripts/validate_skill.py`：确定性的结构与一致性验证器
 - `agents/openai.yaml`：可选的 OpenAI/Codex UI 元数据；其他 Agent 会忽略它
 
 ## 许可证

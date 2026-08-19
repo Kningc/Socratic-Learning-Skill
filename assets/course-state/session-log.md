@@ -1,3 +1,13 @@
+---
+schema_version: "1"
+skill_version: "1.4.0"
+record_type: session-log
+course_id: ""
+revision: 0
+created_at: ""
+updated_at: ""
+---
+
 # Session log
 
 Keep entries compact. Archive older entries when this file becomes costly to load, while retaining an index and any recurring misconceptions or important evidence.

@@ -1,3 +1,14 @@
+---
+schema_version: "1"
+skill_version: "1.4.0"
+record_type: course-map
+course_id: ""
+revision: 0
+created_at: ""
+updated_at: ""
+tracking: active
+---
+
 # Course map
 
 ## Course definition

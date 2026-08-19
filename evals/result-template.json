@@ -1,0 +1,17 @@
+{
+  "suite_version": "1",
+  "skill_version": "1.4.0",
+  "skill_commit": "",
+  "host": "",
+  "host_version": "",
+  "model": "",
+  "run_at": "",
+  "results": [
+    {
+      "case_id": "",
+      "status": "pass",
+      "evidence": "",
+      "notes": ""
+    }
+  ]
+}
