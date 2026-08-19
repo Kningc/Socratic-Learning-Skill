@@ -1,10 +1,10 @@
 ---
 name: socratic-learning
-description: Guide a learner through supplied books, notes, papers, code, problems, images, or other study materials using adaptive Socratic dialogue, hints, practice, and mastery checks. Use when the user wants to learn from material rather than merely receive a summary or finished answer.
+description: Guide a learner through supplied books, courses, notes, papers, code, problems, images, or other study materials using adaptive Socratic dialogue, hints, practice, review, and mastery checks. Use for focused study sessions or sustained learning across a complete book or course, rather than merely providing a summary or finished answer.
 license: MIT
 metadata:
   author: Kningc
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Socratic Learning
@@ -20,6 +20,8 @@ Before teaching:
 1. Inspect the relevant material and locate the section that supports the session.
 2. Form a small internal map of the target concept, prerequisites, likely misconceptions, and evidence of mastery.
 3. Choose the material playbook in [references/material-playbooks.md](references/material-playbooks.md).
+
+If the learner wants to study a complete book or course, resume learning across sessions, follow a curriculum, or retain progress, read [references/long-form-course.md](references/long-form-course.md) and use its optional long-form mode. Do not load that reference for an ordinary one-off session.
 
 For a long source, work in bounded sections. Do not pretend to have read inaccessible or unprovided content. If the source is unavailable, ask the learner to attach or identify it. Browse for supplementary information only when requested, necessary for accuracy, or required by the environment.
 
@@ -47,6 +49,8 @@ After each learner response:
 Prefer questions whose answers provide evidence about understanding. Avoid trivia, vague prompts such as “What do you think?”, leading questions that contain the answer, and multi-question worksheets disguised as dialogue.
 
 Do not make the learner guess facts or conventions they have not encountered. Teach missing information directly, then ask them to use or explain it.
+
+Use focused dialogue by default. A rapid review may present a short batch of retrieval items; an assessment may withhold feedback until the batch ends; and a lab may alternate actions with observations. Make the active mode clear when departing from the one-question rhythm.
 
 ## Adapt challenge and support
 
@@ -99,7 +103,7 @@ At a natural stopping point:
 2. Correct only material gaps and state what evidence of mastery was observed.
 3. Suggest the smallest useful next step and one future retrieval prompt.
 
-Create or update progress files only when the user requests persistent tracking. Record observed evidence and unresolved misconceptions rather than fictional scores, emotions, or narrative history.
+Create or update progress files only when the user requests persistent tracking or approves long-form course state. Follow the state and compaction rules in [references/long-form-course.md](references/long-form-course.md). Record observed evidence and unresolved misconceptions rather than fictional scores, emotions, or narrative history.
 
 ## Style and safety
 

@@ -17,3 +17,5 @@ This Skill retains the portable instructional ideas and deliberately leaves out 
 - **Open-ended Socratic discussion:** Yale's Poorvu Center describes Socratic discussion as open-ended questioning around a particular text or artifact and emphasizes substantive responses to both good and flawed ideas: [Effective Class Discussion](https://poorvucenter.yale.edu/teaching/teaching-resource-library/effective-class-discussion).
 
 These sources support ingredients, not a universal script. The one-question rhythm, five-level hint ladder, two-prompt escalation threshold, and material playbooks are practical design choices intended to keep dialogue usable and prevent unproductive withholding. They should be revised if real use reveals a better policy.
+
+The optional long-form mode operationalizes the same evidence across sessions through a dependency map, qualitative evidence states, adaptive retrieval scheduling, cumulative transfer checks, and compact learner-owned records. Its file schema and scheduling intervals are practical defaults rather than research-validated measurements of mastery.

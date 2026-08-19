@@ -1,4 +1,4 @@
 interface:
   display_name: "Socratic Learning"
-  short_description: "基于任意资料进行自适应提问、提示、练习与掌握检验"
-  default_prompt: "Use $socratic-learning to help me learn this material through adaptive questions and practice."
+  short_description: "基于任意资料开展单次或长期的苏格拉底式自适应学习"
+  default_prompt: "Use $socratic-learning to help me study this material or course through adaptive questions, practice, and review."

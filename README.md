@@ -11,6 +11,8 @@ The core skill is agent-agnostic and written in the portable `SKILL.md` format. 
 - 支持概念、数理与代码、论证文本、论文数据、语言记忆、多媒体和项目材料
 - 卡住时逐级增强提示；需要时直接讲解，不把“苏格拉底式”变成障碍
 - 通过解释、迁移、辨析和延迟回顾判断掌握情况
+- 可选的整本书/长期课程模式，包含课程地图、复习队列、实验记录和累计评估
+- 单次学习默认不持久化；长期状态仅在用户要求或同意后创建
 - 核心协议不包含任何平台专用工具名称或调用语法
 
 ## 支持的 Agent
@@ -60,8 +62,10 @@ Use the socratic-learning skill to help me learn the attached chapter. I want to
 
 - `SKILL.md`：跨 Agent 的核心教学协议
 - `references/material-playbooks.md`：不同资料类型的适配策略
+- `references/long-form-course.md`：整本书和长期课程的编排、复习、实验及评估协议
 - `references/evidence.md`：设计依据与来源说明
 - `references/compatibility.md`：各主流 Agent 的安装与调用方式
+- `assets/course-state/`：获准启用长期跟踪时复制使用的状态模板
 - `agents/openai.yaml`：可选的 OpenAI/Codex UI 元数据；其他 Agent 会忽略它
 
 本 Skill 受 [OSTEP Socratic Tutor](https://github.com/lmonkt/ostep-socratic-tutor) 启发，并结合教育研究重新设计为材料无关、平台无关的学习流程。
