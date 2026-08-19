@@ -7,6 +7,9 @@
 - Scope:
 - Started:
 - Target pace:
+- Included exercises or labs:
+- State directory:
+- Tracking approval recorded:
 
 ## Source register
 

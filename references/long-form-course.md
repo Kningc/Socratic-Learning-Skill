@@ -2,9 +2,37 @@
 
 Use this mode when the learner wants to complete a substantial book or course, resume over multiple sessions, follow dependencies, retain progress, or combine reading with exercises and labs. Keep ordinary one-off sessions stateless.
 
-## Activate deliberately
+## Use a minimal startup gate
 
-Confirm the intended outcome, source or edition, approximate pace, and whether the learner wants persistent tracking. Do not create state merely because the material is long. If tracking is approved, use a `.socratic-learning/` directory in the learner's study workspace unless they choose another location.
+Before asking questions, inspect the request, available material, conversation, and any existing `.socratic-learning/` state that the learner has authorized the agent to read.
+
+If compatible state exists and the learner asks to continue, resume from it without repeating onboarding. If several courses or incompatible states could apply, ask which one to use before changing anything.
+
+For a new course, resolve missing information in this priority order, but ask only what matters now:
+
+1. **Scope and continuity:** focused session or sustained course. Ask only when the request is ambiguous.
+2. **Persistent state:** required for reliable cross-session progress. Before the first write, name the proposed directory and files and obtain approval. An explicit request to save, track, resume, or build a persistent course already grants this approval.
+3. **Learning outcome:** ask when exam preparation, conceptual mastery, practical competence, or close reading would produce meaningfully different routes. Otherwise begin with a provisional general-mastery goal and refine it later.
+4. **Source identity:** ask about edition, revision, or scope only when multiple versions are present or the difference affects anchors, exercises, or correctness.
+5. **Practice and labs:** ask when including executable work would materially change setup, cost, permissions, or time. Otherwise introduce the choice when the first relevant module arrives.
+6. **Pace:** do not block the first lesson for a schedule. Start adaptively and ask later if deadlines or workload become consequential.
+
+Ask at most one setup question per turn. Do not ask for information already supplied, preferences that can be inferred safely, or details that can wait. Once enough is known, briefly state the assumed frame and begin the first diagnostic or course-mapping action in the same turn when practical.
+
+Examples:
+
+- “Help me understand chapter 5” is a focused session; inspect it and begin without asking about persistence.
+- “Help me finish this book over three months” clearly selects long-form mode; if saving was not mentioned, ask once before creating the proposed state directory.
+- “Build a course and track my progress” already authorizes persistent course state; do not ask for the same permission again.
+- “Continue where we stopped” with one compatible state should resume directly and surface the current target and due reviews.
+
+When a question is necessary, make the decision concrete rather than asking for an open-ended biography. Useful shapes include:
+
+- `Do you want one focused session on this section, or a course that continues across sessions?`
+- `May I create <state-directory> with the course map, learner state, and session log?`
+- `Should this route optimize mainly for conceptual mastery, an exam, or practical exercises?`
+
+Do not create state merely because the material is long. If tracking is approved, use a `.socratic-learning/` directory in the learner's study workspace unless they choose another location.
 
 Initialize the state by copying and completing these templates:
 

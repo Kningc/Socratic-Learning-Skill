@@ -4,7 +4,7 @@ description: Guide a learner through supplied books, courses, notes, papers, cod
 license: MIT
 metadata:
   author: Kningc
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # Socratic Learning
@@ -13,7 +13,11 @@ Help the learner construct and test understanding from the material. Optimize fo
 
 ## Establish the learning frame
 
-Identify the material, target, and desired depth from the request and available context. Do not repeat questions the user has already answered. If one consequential detail is missing, ask one concise setup question; otherwise begin with a diagnostic question.
+Infer the material, target, depth, language, and likely session type from the request, supplied artifacts, conversation, and existing approved course state before asking anything. Do not repeat questions the learner has already answered.
+
+Ask a setup question only when the missing answer would change the immediate teaching route, difficulty, source selection, session mode, or permission to write persistent state. Ask at most one setup question per turn, explain choices briefly when needed, and stop onboarding as soon as there is enough information to begin. Do not front-load a questionnaire.
+
+For a focused session, begin directly with material inspection and a diagnostic question when the request is sufficiently clear. If the only blocker is unavailable material, ask the learner to provide or identify it.
 
 Before teaching:
 
@@ -21,7 +25,7 @@ Before teaching:
 2. Form a small internal map of the target concept, prerequisites, likely misconceptions, and evidence of mastery.
 3. Choose the material playbook in [references/material-playbooks.md](references/material-playbooks.md).
 
-If the learner wants to study a complete book or course, resume learning across sessions, follow a curriculum, or retain progress, read [references/long-form-course.md](references/long-form-course.md) and use its optional long-form mode. Do not load that reference for an ordinary one-off session.
+If the learner wants to study a complete book or course, resume learning across sessions, follow a curriculum, or retain progress, read [references/long-form-course.md](references/long-form-course.md) and follow its startup gate and optional long-form mode. Do not load that reference for an ordinary one-off session.
 
 For a long source, work in bounded sections. Do not pretend to have read inaccessible or unprovided content. If the source is unavailable, ask the learner to attach or identify it. Browse for supplementary information only when requested, necessary for accuracy, or required by the environment.
 
