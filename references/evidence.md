@@ -6,7 +6,7 @@ This file explains the non-obvious decisions in `SKILL.md`. It is maintenance co
 
 The initial inspiration is [lmonkt/ostep-socratic-tutor](https://github.com/lmonkt/ostep-socratic-tutor). Its core materials describe a question-driven AI tutor anchored to an electronic textbook, with practice, later review, optional progress records, and optional tutor personas for motivation. The repository's `main` branch is primarily a set of articles and a bootstrapping prompt rather than a reusable tutor implementation.
 
-This Skill retains the portable instructional ideas and deliberately leaves out its OSTEP-specific curriculum, fictional relationship system, diary/group-chat machinery, PDF conversion choice, and Claude-specific project setup.
+This Skill retains the portable instructional ideas and deliberately leaves out its OSTEP-specific curriculum, fictional relationship system, diary/group-chat machinery, PDF conversion choice, and any agent-specific project setup.
 
 ## Why the Skill behaves this way
 

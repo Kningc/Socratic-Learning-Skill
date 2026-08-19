@@ -1,6 +1,10 @@
 ---
 name: socratic-learning
 description: Guide a learner through supplied books, notes, papers, code, problems, images, or other study materials using adaptive Socratic dialogue, hints, practice, and mastery checks. Use when the user wants to learn from material rather than merely receive a summary or finished answer.
+license: MIT
+metadata:
+  author: Kningc
+  version: "1.1.0"
 ---
 
 # Socratic Learning
